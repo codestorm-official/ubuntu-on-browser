@@ -36,23 +36,17 @@ This project utilizes the Ubuntu Docker image to deploy a container that support
 
 ## 🛠️ Configuration & Variables
 
-### Environment Variables (Runtime)
-Configure these in the **Variables** tab of your Railway dashboard to secure your terminal:
+### Environment Variables
+Configure these in the **Variables** tab of your Railway dashboard. These variables control both the installation version and your login security:
 
-| Variable     | Description                                      |
-| :----------- | :----------------------------------------------- |
-| **PORT**     | The port on which the ttyd program will listen.  |
-| **USERNAME** | The username required to login to the web shell. |
-| **PASSWORD** | The password required to login to the web shell. |
+| Variable           | Default  | Description                                                                       |
+| :----------------- | :------- | :-------------------------------------------------------------------------------- |
+| **UBUNTU_VERSION** | `latest` | **(Build)** Set this to `22.04`, `20.04`, etc., to deploy your preferred version. |
+| **USERNAME**       | `admin`  | **(Runtime)** Your custom username to login to the web terminal.                  |
+| **PASSWORD**       | `admin`  | **(Runtime)** Your secure password to login to the web terminal.                  |
+| **PORT**           | `8080`   | **(System)** The port assigned by Railway.                                        |
 
-### Build Arguments (Dynamic Versioning)
-If you want to use a specific Ubuntu version, add this in **Settings > Build > Build Arguments**:
-
-| Argument           | Default  | Description                                                |
-| :----------------- | :------- | :--------------------------------------------------------- |
-| **UBUNTU_VERSION** | `latest` | Set this to `22.04`, `20.04`, etc., to change the base OS. |
-
-> **⚠️ SECURITY NOTE:** It is strongly advised to set a custom **USERNAME** and **PASSWORD** before deploying to prevent unauthorized access.
+> **⚠️ SECURITY NOTE:** It is strongly advised to set a custom **USERNAME** and **PASSWORD** before deploying to prevent unauthorized access to your cloud terminal.
 
 ---
 
