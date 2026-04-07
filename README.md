@@ -12,7 +12,7 @@
 
 **Template Name:** Ubuntu
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/template/ubuntu-on-browser)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/ubuntu-1?referralCode=asepsp&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 ## 📖 Description
 Want to try out Ubuntu or need a lightweight version of Linux available at all times? 🚀 
